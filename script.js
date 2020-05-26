@@ -123,7 +123,7 @@ function calculateNumber(pizzaPrice) {
     return parseInt(String((cost / pizzaPrice) + 1))
   }
   else if (document.querySelector('#round').value == "fraction") {
-    return toFixed(cost / pizzaPrice)
+    return (cost / pizzaPrice).toFixed(2)
   }
   
   if (cost % pizzaPrice == 0) {
